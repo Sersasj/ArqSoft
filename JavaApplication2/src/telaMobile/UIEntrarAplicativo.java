@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package telaMobile;
-
+import javax.swing.JButton;
 /**
  *
  * @author sergi
@@ -29,7 +29,7 @@ public class UIEntrarAplicativo extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         placaText = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        confirmar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -47,9 +47,14 @@ public class UIEntrarAplicativo extends javax.swing.JFrame {
         placaText.setForeground(new java.awt.Color(0, 0, 0));
         placaText.setText("___._____");
 
-        jButton1.setBackground(new java.awt.Color(0, 102, 204));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Confirmar");
+        confirmar.setBackground(new java.awt.Color(0, 102, 204));
+        confirmar.setForeground(new java.awt.Color(255, 255, 255));
+        confirmar.setText("Confirmar");
+        confirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                confirmarActionPerformed(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 255));
 
@@ -146,7 +151,7 @@ public class UIEntrarAplicativo extends javax.swing.JFrame {
             .addComponent(placaText)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(74, 74, 74)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -162,7 +167,7 @@ public class UIEntrarAplicativo extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(placaText, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(64, 64, 64))
         );
 
@@ -183,6 +188,10 @@ public class UIEntrarAplicativo extends javax.swing.JFrame {
     private void linhasOnibusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_linhasOnibusActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_linhasOnibusActionPerformed
+
+    private void confirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_confirmarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -221,7 +230,7 @@ public class UIEntrarAplicativo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton confirmar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -232,4 +241,15 @@ public class UIEntrarAplicativo extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> linhasOnibus;
     private javax.swing.JTextField placaText;
     // End of variables declaration//GEN-END:variables
+
+
+
+
+    public JButton getConfirmar(){
+        return confirmar;
+    }
+
+
+
+
 }
